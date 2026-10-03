@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Battle scene</title>
+<link rel="stylesheet" href="vendor/battle.css">
+<link rel="stylesheet" href="vendor/battle-log.css">
+<link rel="stylesheet" href="stage/stage.css?v=0adcc7af57">
+<style>
+  html, body { margin: 0; padding: 0; background: transparent; overflow: hidden; }
+  #battle { position: relative; top: 0; left: 0; border: 0; margin: 0; }
+  #log { display: none; }
+</style>
+<script>
+  // what Showdown's battle engine expects from its host page
+  window.exports = window;
+  window.Config = {
+    routes: {root: 'pokemonshowdown.com', client: 'play.pokemonshowdown.com', dex: 'dex.pokemonshowdown.com',
+      replays: 'replay.pokemonshowdown.com', users: 'pokemonshowdown.com/users'},
+    server: {id: 'showdown', host: 'sim3.psim.us', port: 443, httpport: 8000, altport: 80, registered: true},
+    customcolors: {}, whitelist: [], testclient: false,
+  };
+</script>
+</head>
+<body>
+<div id="battle" class="battle"></div>
+<div id="log" class="battle-log"></div>
+<script src="vendor/ps-polyfill.js"></script>
+<script src="vendor/jquery-1.11.0.min.js"></script>
+<script src="vendor/html-sanitizer-minified.js"></script>
+<script src="vendor/battle-sound.js"></script>
+<script src="vendor/battledata.js"></script>
+<script src="vendor/pokedex-mini.js"></script>
+<script src="vendor/pokedex-mini-bw.js"></script>
+<script src="vendor/graphics.js"></script>
+<script src="vendor/pokedex.js"></script>
+<script src="vendor/moves.js"></script>
+<script src="vendor/abilities.js"></script>
+<script src="vendor/items.js"></script>
+<script src="vendor/battle-tooltips.js"></script>
+<script src="vendor/battle.js"></script>
+<script type="module" src="scene.js?v=0adcc7af57"></script>
+</body>
+</html>
