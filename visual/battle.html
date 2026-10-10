@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Battle scene</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;0,700;1,700&display=swap">
+  <link rel="stylesheet" href="battle.css?v=4fa7cde8b0">
+  <style>
+    :root { color-scheme: dark; }
+    html, body { margin: 0; height: 100%; overflow: hidden; background: #0b0d14; }
+  </style>
+  <script>
+    // what Showdown's sound player (battle-sound.js) expects from its host page
+    window.exports = window;
+    window.Config = {routes: {client: 'play.pokemonshowdown.com'}};
+  </script>
+  <script src="../showdown/vendor/battle-sound.js"></script>
+</head>
+<body>
+  <div id="battle"></div>
+  <script src="battle.js?v=4fa7cde8b0"></script>
+</body>
+</html>

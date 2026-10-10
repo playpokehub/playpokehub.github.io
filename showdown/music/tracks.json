@@ -1,0 +1,8 @@
+[
+  {"gen": 9, "file": "za-rogue-mega-rayquaza.mp3", "name": "Legends: Z-A: Rogue Mega Rayquaza battle"},
+  {"gen": 8, "file": "swsh-gym-leader.mp3", "name": "Sword & Shield: Gym Leader battle"},
+  {"gen": 7, "file": "usum-ultra-necrozma.mp3", "name": "Ultra Sun & Ultra Moon: Ultra Necrozma battle"},
+  {"gen": 3, "file": "oras-zinnia.mp3", "name": "Omega Ruby & Alpha Sapphire: Zinnia battle"},
+  {"gen": 4, "file": "dppt-cynthia.mp3", "name": "Diamond, Pearl & Platinum: Champion Cynthia battle"},
+  {"gen": "other", "file": "deadlock-wemmbu.mp3", "name": "Song for Wemmbu: DEADLOCK"}
+]
